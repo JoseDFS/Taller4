@@ -17,6 +17,6 @@ interface FavoritosDao{
     suspend fun insertFavorite(libro: Libro)
 
     @Query("DELETE FROM Favoritos")
-    fun deleteFavorite(libro: Libro)
+     suspend fun deleteFavorite(libro: Libro)
 
 }
