@@ -5,7 +5,7 @@ import androidx.lifecycle.LiveData
 import com.example.taller_4.daos.LibroDao
 import com.example.taller_4.entities.Libro
 
-class WordRepository(private val libroDao: LibroDao) {
+class LibroRepository(private val libroDao: LibroDao) {
 
     val allBooks: LiveData<List<Libro>> = libroDao.getAllBooks()
 
