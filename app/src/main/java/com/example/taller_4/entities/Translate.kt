@@ -5,23 +5,23 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import androidx.room.Relation
 
-@Entity(tableName = "libros")
-data class Libro(
+@Entity(tableName = "Translate")
+data class Translate(
 
-    @ColumnInfo(name = "titulo")
-    val titulo:String,
-    @ColumnInfo(name = "caratula")
-    val caratula:String,
+    @ColumnInfo(name = "title")
+    val title:String,
+    @ColumnInfo(name = "cover")
+    val cover:String,
     @Relation(parentColumn = "id",entityColumn = "id")
-    val autores:List<Autor>,
-    @ColumnInfo(name = "edicion")
-    val edicion:String,
+    val autors:List<Autor>,
+    @ColumnInfo(name = "edition")
+    val edition:String,
     @ColumnInfo(name = "editorial")
     val editorial:String,
     @ColumnInfo(name = "isbn")
     val isbn:String,
-    @ColumnInfo(name = "resumen")
-    val resumen:String,
+    @ColumnInfo(name = "resume")
+    val resume:String,
     @ColumnInfo(name = "tags")
     val tags:List<String>
 ){
