@@ -1,4 +1,5 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
     <string name="app_name">Taller_4_PDM</string>
 
     <!-- TODO: Remove or change this placeholder text -->
@@ -13,4 +14,6 @@
     <string name="editoriales">Editoriales:</string>
     <string name="resumen">Resumen:</string>
     <string name="tag_s">Tag(s):</string>
+
+>>>>>>> c4167770b1a2663bc1109bc9f95bca85115f50e9
 </resources>

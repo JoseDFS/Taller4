@@ -1,3 +1,4 @@
+
 package com.example.taller_4.adapters
 
 import android.view.LayoutInflater
@@ -22,9 +23,6 @@ class LibroAdapter(var items : List<Libro>, val clickListener : (Libro) -> Unit)
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(items[position], clickListener)
     }
-
-
-
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 

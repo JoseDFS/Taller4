@@ -20,16 +20,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val recyclerView = findViewById<RecyclerView>(R.id.book_list)
-        val adapter =LibroAdapter(listOf<Libro>()){
-            startActivity(Intent(this, Activity_Libro::class.java).putExtra(Constants.TEXT_KEY_CARATULA, it.Caratula)
-                .putExtra(Constants.TEXT_KEY_AUTORES,it.Autores as Array<out String>)
-                .putExtra(Constants.TEXT_KEY_EDICION,it.Edicion)
-                .putExtra(Constants.TEXT_KEY_EDITORIAL,it.Editorial)
-                .putExtra(Constants.TEXT_KEY_FAVORITE,it.Favorito)
-                .putExtra(Constants.TEXT_KEY_ISBN,it.isbn)
-                .putExtra(Constants.TEXT_KEY_RESUMEN,it.Resumen)
-                .putExtra(Constants.TEXT_KEY_TAG,it.tags as Array<out String>)
-                .putExtra(Constants.TEXT_KEY_TITULO,it.Titulo)
+        val adapter = LibroAdapter(listOf<Libro>()) {
+            startActivity(
+                Intent(this, Activity_Libro::class.java).putExtra(Constants.TEXT_KEY_CARATULA, it.Caratula)
+                    .putExtra(Constants.TEXT_KEY_AUTORES, it.Autores as Array<out String>)
+                    .putExtra(Constants.TEXT_KEY_EDICION, it.Edicion)
+                    .putExtra(Constants.TEXT_KEY_EDITORIAL, it.Editorial)
+                    .putExtra(Constants.TEXT_KEY_FAVORITE, it.Favorito)
+                    .putExtra(Constants.TEXT_KEY_ISBN, it.ISBN)
+                    .putExtra(Constants.TEXT_KEY_RESUMEN, it.Resumen)
+                    .putExtra(Constants.TEXT_KEY_TAG, it.Tag as Array<out String>)
+                    .putExtra(Constants.TEXT_KEY_TITULO, it.Titulo)
             )
 
         }
@@ -38,8 +39,5 @@ class MainActivity : AppCompatActivity() {
 
         bookViewModel = ViewModelProviders.of(this).get(BookViewModel::class.java)
 
-        bookViewModel.allLibros.observe(this, Observer { words ->
-
-        })
     }
 }

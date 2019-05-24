@@ -13,7 +13,7 @@ data class Libro(
     @ColumnInfo(name = "caratula")
     val caratula:String,
     @Relation(parentColumn = "id",entityColumn = "id")
-    val autores: String,
+    val autores:List<Autor>,
     @ColumnInfo(name = "edicion")
     val edicion:String,
     @ColumnInfo(name = "editorial")
@@ -23,7 +23,7 @@ data class Libro(
     @ColumnInfo(name = "resumen")
     val resumen:String,
     @ColumnInfo(name = "tags")
-    val tags: String
+    val tags:List<String>
 ){
     @PrimaryKey(autoGenerate = true)
     var id:Long=0
