@@ -7,13 +7,9 @@ import androidx.room.Relation
 
 @Entity(tableName = "Autores")
 data class Autor(
+    @PrimaryKey(autoGenerate = true)
+    var id_autor:Long,
     @ColumnInfo
-    val autor:String,
-    @Relation(parentColumn = "id",entityColumn = "id")
-    val libros:List<Libro>
-){
+    val nameAutor:String
 
-        @PrimaryKey(autoGenerate = true)
-        var id:Long=0
-
-}
+)

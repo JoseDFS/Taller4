@@ -31,7 +31,6 @@ public abstract class RoomDB:RoomDatabase(){
                 INSTANCE = instance
                 return instance
             }
-
         }
     }
 }

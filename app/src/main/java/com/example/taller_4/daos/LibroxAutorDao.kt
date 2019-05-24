@@ -8,14 +8,12 @@ import androidx.room.Query
 import com.example.taller_4.entities.Libro
 
 @Dao
-interface LibroDao{
+interface LibroxAutorDao{
     @Query("SELECT * FROM libros")
-    fun getAllBooks():LiveData<List<Libro>>
+    fun getAllBooksByAutor(idAutor: String): LiveData<List<Libro>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(libro:Libro)
+    suspend fun insert(idLibro:String,idAutor: String)
 
-    @Query("DELETE FROM libros")
-    fun deleteTableLibro()
 
 }
