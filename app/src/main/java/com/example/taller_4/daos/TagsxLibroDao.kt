@@ -10,8 +10,11 @@ import com.example.taller_4.entities.Tags
 @Dao
 interface TagsxLibroDao{
 
-   @Query("SELECT * FROM TagsxLibro")
-   fun getAllTags():LiveData<List<Tags>>
+    @Query("SELECT * FROM TagsxLibro ")
+    fun getAllTags():LiveData<List<Tags>>
+
+    @Query("SELECT * FROM TagsxLibro WHERE idTag=:idTag")
+    fun getAllBooksByTags(idTag: String):LiveData<List<Tags>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(idTag:String,idLibro:String)

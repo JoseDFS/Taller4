@@ -9,7 +9,8 @@ import com.example.taller_4.entities.Libro
 
 @Dao
 interface LibroxAutorDao{
-    @Query("SELECT * FROM libros")
+
+    @Query("SELECT * FROM LIBROXAUTOR WHERE idAutor=:idAutor")
     fun getAllBooksByAutor(idAutor: String): LiveData<List<Libro>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
