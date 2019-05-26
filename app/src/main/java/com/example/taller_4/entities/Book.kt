@@ -16,7 +16,7 @@ data class Book(
     @ColumnInfo(name = "Resumen")
     val resumen:String,
     @ColumnInfo(name = "Favorito")
-    val favorito:Boolean,
+    val favorito:Int,
     @ColumnInfo(name = "Caratula")
     val caratula:Int
 
