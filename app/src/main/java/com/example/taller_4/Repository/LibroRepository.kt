@@ -15,4 +15,14 @@ class LibroRepository(private var bookDao: BookDao) {
     suspend fun insert(book: Book) {
         bookDao.insert(book)
     }
+    @WorkerThread
+    suspend fun addFav(nameBook: String) {
+        bookDao.addToFavarites(nameBook)
+    }
+
+    @WorkerThread
+    suspend fun deleteFav(nameBook: String) {
+        bookDao.removeFromFavarites(nameBook)
+    }
+
 }

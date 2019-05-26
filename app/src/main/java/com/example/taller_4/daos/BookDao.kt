@@ -22,8 +22,8 @@ interface BookDao{
     fun getAllFavoriteBooks():LiveData<List<Book>>
 
     @Query("UPDATE book_table SET Favorito =  1 WHERE Titulo = :titulo")
-    fun addToFavarites(titulo:String)
+    suspend fun addToFavarites(titulo:String)
 
     @Query("UPDATE book_table SET Favorito =  0 WHERE Titulo = :titulo")
-    fun removeFromFavarites(titulo:String)
+    suspend fun removeFromFavarites(titulo:String)
 }
