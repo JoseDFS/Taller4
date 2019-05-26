@@ -5,12 +5,9 @@ package com.example.taller_4.Activities
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.taller_4.R
-import com.example.taller_4.ViewModels.BookViewModel
 
 class Main2Activity : AppCompatActivity() {
 
-    private val newWordActivityRequestCode = 1
-    private lateinit var bookViewModel: BookViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
