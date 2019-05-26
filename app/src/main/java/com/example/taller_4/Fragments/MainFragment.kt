@@ -21,7 +21,7 @@ private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
 
-class MainFragment : Fragment(), BookFragment.OnFragmentInteractionListener, FavoriteFragment.OnFragmentInteractionListener {
+class MainFragment : Fragment(), FavoriteFragment.OnFragmentInteractionListener, BookFragment.OnFragmentInteractionListener {
     override fun onFragmentInteraction(uri: Uri) {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
@@ -90,9 +90,9 @@ class MainFragment : Fragment(), BookFragment.OnFragmentInteractionListener, Fav
 
         val recyclerView = view.recyclerview
         val adapter = object : BookListAdapter(view.context){
-            override fun addListener(holder:WordViewHolder,titulo: String, caratula: Int, favorito: String, autor: String, editorial: String, resumen: String, tags: String) {
+            override fun addListener(holder:WordViewHolder,titulo: String, caratula: Int, favorito: String, autor: String, editorial: String, resumen: String/*, tags: String*/) {
                 holder.book_container.setOnClickListener {
-                    val bookFragment = BookFragment.newInstance(titulo, autor, favorito, caratula,editorial, resumen, tags)
+                    val bookFragment = BookFragment.newInstance(titulo, autor, favorito, caratula/*,editorial, resumen, tags*/)
                     fragmentManager!!.beginTransaction().replace(R.id.main_fragment_content,bookFragment).addToBackStack("").commit()
                 }
             }

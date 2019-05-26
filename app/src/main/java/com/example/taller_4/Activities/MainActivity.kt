@@ -8,12 +8,13 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.example.taller_4.Fragments.BookFragment
+//import com.example.taller_4.Fragments.BookFragment
 import com.example.taller_4.Fragments.FavoriteFragment
 import com.example.taller_4.Fragments.MainFragment
 import com.example.taller_4.R
 import com.example.taller_4.ViewModels.BookViewModel
 
-class MainActivity : AppCompatActivity(), MainFragment.OnFragmentInteractionListener, FavoriteFragment.OnFragmentInteractionListener, BookFragment.OnFragmentInteractionListener {
+class MainActivity : AppCompatActivity(), MainFragment.OnFragmentInteractionListener, FavoriteFragment.OnFragmentInteractionListener, BookFragment.OnFragmentInteractionListener{
     override fun onFragmentInteraction(uri: Uri) {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
