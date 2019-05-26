@@ -81,14 +81,14 @@ abstract class LibraryRoomDatabase : RoomDatabase() {
                     "\n" +
                     "Se trata de uno de los libros más vendidos de la historia, las estimaciones de sus ventas mundiales superan los 110 millones de copias.\n" +
                     "\n" +
-                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", False, R.drawable.harry, "Magia, Ciencia ficcion")
+                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", True, R.drawable.harry/*, "Magia, Ciencia ficcion"*/)
             bookDao.insert(word)
 
             word = Book("Harry Potter y la camara secreta", "J.K Rowling", "Editorial Salamandra", "Harry Potter y la piedra filosofal es el primer libro de una serie de siete, fue publicado en el Reino Unido el 30 de junio de 1997 y en español en marzo de 1999.\n" +
                     "\n" +
                     "Se trata de uno de los libros más vendidos de la historia, las estimaciones de sus ventas mundiales superan los 110 millones de copias.\n" +
                     "\n" +
-                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", False, R.drawable.harry2, "Magia, Ciencia ficcion")
+                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", False, R.drawable.harry2/*, "Magia, Ciencia ficcion"*/)
 
             bookDao.insert(word)
 
@@ -96,14 +96,14 @@ abstract class LibraryRoomDatabase : RoomDatabase() {
                     "\n" +
                     "Se trata de uno de los libros más vendidos de la historia, las estimaciones de sus ventas mundiales superan los 110 millones de copias.\n" +
                     "\n" +
-                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", False, R.drawable.harry3, "Magia, Ciencia ficcion")
+                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", True, R.drawable.harry3/*, "Magia, Ciencia ficcion"*/)
             bookDao.insert(word)
 
             word = Book("Harry Potter y el caliz de fuego", "J.K Rowling", "Editorial Salamandra", "Harry Potter y la piedra filosofal es el primer libro de una serie de siete, fue publicado en el Reino Unido el 30 de junio de 1997 y en español en marzo de 1999.\n" +
                     "\n" +
                     "Se trata de uno de los libros más vendidos de la historia, las estimaciones de sus ventas mundiales superan los 110 millones de copias.\n" +
                     "\n" +
-                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", False, R.drawable.harry4, "Magia, Ciencia ficcion")
+                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", False, R.drawable.harry4/*, "Magia, Ciencia ficcion"*/)
 
             bookDao.insert(word)
 
@@ -111,14 +111,14 @@ abstract class LibraryRoomDatabase : RoomDatabase() {
                     "\n" +
                     "Se trata de uno de los libros más vendidos de la historia, las estimaciones de sus ventas mundiales superan los 110 millones de copias.\n" +
                     "\n" +
-                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", False, R.drawable.harry5, "Magia, Ciencia ficcion")
+                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", False, R.drawable.harry5/*, "Magia, Ciencia ficcion"*/)
             bookDao.insert(word)
 
             word = Book("Harry Potter y el principe mestizo", "J.K Rowling", "Editorial Salamandra", "Harry Potter y la piedra filosofal es el primer libro de una serie de siete, fue publicado en el Reino Unido el 30 de junio de 1997 y en español en marzo de 1999.\n" +
                     "\n" +
                     "Se trata de uno de los libros más vendidos de la historia, las estimaciones de sus ventas mundiales superan los 110 millones de copias.\n" +
                     "\n" +
-                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", False, R.drawable.harry6, "Magia, Ciencia ficcion")
+                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", False, R.drawable.harry6/*, "Magia, Ciencia ficcion"*/)
 
             bookDao.insert(word)
 
@@ -126,7 +126,7 @@ abstract class LibraryRoomDatabase : RoomDatabase() {
                     "\n" +
                     "Se trata de uno de los libros más vendidos de la historia, las estimaciones de sus ventas mundiales superan los 110 millones de copias.\n" +
                     "\n" +
-                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", False, R.drawable.harry7, "Magia, Ciencia ficcion")
+                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", True, R.drawable.harry7/*, "Magia, Ciencia ficcion"*/)
 
             bookDao.insert(word)
 

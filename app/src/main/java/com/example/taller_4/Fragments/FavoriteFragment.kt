@@ -26,6 +26,7 @@ class FavoriteFragment : Fragment(), BookFragment.OnFragmentInteractionListener 
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
+
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -89,10 +90,9 @@ class FavoriteFragment : Fragment(), BookFragment.OnFragmentInteractionListener 
     fun initAll(view: View){
         val recyclerView = view.recyclerview
         val adapter = object : BookListAdapter(view.context){
-            override fun addListener(holder: WordViewHolder, titulo: String, caratula: Int, favorito: String, autor: String, editorial: String, resumen: String, tags: String) {
-                Log.d("dsd","")
+            override fun addListener(holder: WordViewHolder, titulo: String, caratula: Int, favorito: String, autor: String, editorial: String, resumen: String) {
+                Log.d("sdsd","")
             }
-
 
         }
         recyclerView.adapter = adapter
