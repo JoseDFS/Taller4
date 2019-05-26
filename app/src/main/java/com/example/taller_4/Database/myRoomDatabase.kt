@@ -77,14 +77,14 @@ abstract class myRoomDatabase: RoomDatabase(){
                     "\n" +
                     "Se trata de uno de los libros más vendidos de la historia, las estimaciones de sus ventas mundiales superan los 110 millones de copias.\n" +
                     "\n" +
-                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", True, R.drawable.harry)
+                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", 1, R.drawable.harry)
             bookDao.insert(word)
 
             word = Book("Harry Potter y la camara secreta", "J.K Rowling", "Editorial Salamandra", "Harry Potter y la piedra filosofal es el primer libro de una serie de siete, fue publicado en el Reino Unido el 30 de junio de 1997 y en español en marzo de 1999.\n" +
                     "\n" +
                     "Se trata de uno de los libros más vendidos de la historia, las estimaciones de sus ventas mundiales superan los 110 millones de copias.\n" +
                     "\n" +
-                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", False, R.drawable.harry2)
+                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", 0, R.drawable.harry2)
 
             bookDao.insert(word)
 
@@ -92,14 +92,14 @@ abstract class myRoomDatabase: RoomDatabase(){
                     "\n" +
                     "Se trata de uno de los libros más vendidos de la historia, las estimaciones de sus ventas mundiales superan los 110 millones de copias.\n" +
                     "\n" +
-                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", True, R.drawable.harry3)
+                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", 1, R.drawable.harry3)
             bookDao.insert(word)
 
             word = Book("Harry Potter y el caliz de fuego", "J.K Rowling", "Editorial Salamandra", "Harry Potter y la piedra filosofal es el primer libro de una serie de siete, fue publicado en el Reino Unido el 30 de junio de 1997 y en español en marzo de 1999.\n" +
                     "\n" +
                     "Se trata de uno de los libros más vendidos de la historia, las estimaciones de sus ventas mundiales superan los 110 millones de copias.\n" +
                     "\n" +
-                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", False, R.drawable.harry4)
+                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", 0, R.drawable.harry4)
 
             bookDao.insert(word)
 
@@ -107,14 +107,14 @@ abstract class myRoomDatabase: RoomDatabase(){
                     "\n" +
                     "Se trata de uno de los libros más vendidos de la historia, las estimaciones de sus ventas mundiales superan los 110 millones de copias.\n" +
                     "\n" +
-                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", True, R.drawable.harry5)
+                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", 1, R.drawable.harry5)
             bookDao.insert(word)
 
             word = Book("Harry Potter y el principe mestizo", "J.K Rowling", "Editorial Salamandra", "Harry Potter y la piedra filosofal es el primer libro de una serie de siete, fue publicado en el Reino Unido el 30 de junio de 1997 y en español en marzo de 1999.\n" +
                     "\n" +
                     "Se trata de uno de los libros más vendidos de la historia, las estimaciones de sus ventas mundiales superan los 110 millones de copias.\n" +
                     "\n" +
-                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", False, R.drawable.harry6)
+                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", 0, R.drawable.harry6)
 
             bookDao.insert(word)
 
@@ -122,7 +122,7 @@ abstract class myRoomDatabase: RoomDatabase(){
                     "\n" +
                     "Se trata de uno de los libros más vendidos de la historia, las estimaciones de sus ventas mundiales superan los 110 millones de copias.\n" +
                     "\n" +
-                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", True, R.drawable.harry7)
+                    "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.", 1, R.drawable.harry7)
 
             bookDao.insert(word)
 
