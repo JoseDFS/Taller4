@@ -7,10 +7,6 @@ import androidx.lifecycle.viewModelScope
 import com.example.taller_4.Repository.AutorRepository
 import com.example.taller_4.Repository.FavoritoRepository
 import com.example.taller_4.Repository.LibroRepository
-import com.example.taller_4.RoomDB
-import com.example.taller_4.entities.Autor
-import com.example.taller_4.entities.Favorito
-import com.example.taller_4.entities.Libro
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

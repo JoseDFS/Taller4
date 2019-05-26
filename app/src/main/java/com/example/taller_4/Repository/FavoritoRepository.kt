@@ -2,10 +2,6 @@ package com.example.taller_4.Repository
 
 import androidx.annotation.WorkerThread
 import androidx.lifecycle.LiveData
-import com.example.taller_4.daos.FavoritosDao
-import com.example.taller_4.daos.LibroDao
-import com.example.taller_4.entities.Favorito
-import com.example.taller_4.entities.Libro
 
 class FavoritoRepository(private val favoritoDao: FavoritosDao) {
 
