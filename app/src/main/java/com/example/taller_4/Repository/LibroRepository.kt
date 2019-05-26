@@ -2,15 +2,17 @@ package com.example.taller_4.Repository
 
 import androidx.annotation.WorkerThread
 import androidx.lifecycle.LiveData
+import com.example.taller_4.daos.BookDao
+import com.example.taller_4.entities.Book
 
-class LibroRepository(private val libroDao: LibroDao) {
+class LibroRepository(private var bookDao: BookDao) {
 
-    val allBooks: LiveData<List<Libro>> = libroDao.getAllBooks()
+    val allBooks: LiveData<List<Book>> = bookDao.getBooks()
 
-    val deleteBooks = libroDao.deleteTableLibro()
+   val getFavorites:LiveData<List<Book>> = bookDao.getAllFavoriteBooks()
 
     @WorkerThread
-    suspend fun insert(libro: Libro) {
-        libroDao.insert(libro)
+    suspend fun insert(book: Book) {
+        bookDao.insert(book)
     }
 }
