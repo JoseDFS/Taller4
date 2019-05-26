@@ -1,4 +1,4 @@
-package com.example.android.roomwordssample.Fragments
+package com.example.taller_4.Fragments
 
 import android.content.Context
 import android.net.Uri
@@ -11,9 +11,9 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.android.roomwordssample.Adapter.BookListAdapter
-import com.example.android.roomwordssample.ViewModel.BookViewModel
-import com.example.android.roomwordssample.R
+import com.example.taller_4.Adapter.BookListAdapter
+import com.example.taller_4.ViewModels.BookViewModel
+import com.example.taller_4.R
 import kotlinx.android.synthetic.main.content_main.view.*
 
 
@@ -78,12 +78,12 @@ class FavoriteFragment : Fragment(), BookFragment.OnFragmentInteractionListener 
 
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-                FavoriteFragment().apply {
-                    arguments = Bundle().apply {
-                        putString(ARG_PARAM1, param1)
-                        putString(ARG_PARAM2, param2)
-                    }
+            FavoriteFragment().apply {
+                arguments = Bundle().apply {
+                    putString(ARG_PARAM1, param1)
+                    putString(ARG_PARAM2, param2)
                 }
+            }
     }
 
     fun initAll(view: View){
